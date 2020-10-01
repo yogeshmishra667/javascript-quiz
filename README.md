@@ -9,9 +9,11 @@ A simple quiz template written in js/jquery and is responsively designed.
 
 In the future, I will add a generator to add questions, etc.
 
-## Code Samples
+
+
 
 
 
 ## How to use ?
 
+it
