@@ -25,9 +25,10 @@ quizQuestions.prototype.checkAnswer = function () {
    var quizOne = new quizQuestions('whta is your name', ['yogi', 'mukesh', 'dev'], 1);
    var quizSecond = new quizQuestions('whta is your fav programming language', ['java', 'php', 'javascript'], 2);
    var quizThree = new quizQuestions('whta is your  pet name', ['dog', 'rabbit', 'mouse'], 2);
+var quizFour = new quizQuestions('whta is your  puppy name', ['max', 'coco', 'luci'], 1);
 
 
-       var quizAns = [quizOne, quizSecond, quizThree];
+       var quizAns = [quizOne, quizSecond, quizThree, quizFour];
 //console.log(answer);i + ':' + this.aneswer[i]
 var ans = Math.floor(Math.random() * quizAns.length);
       quizAns[ans].correctAns();
