@@ -8,7 +8,7 @@
       quizQuestions.prototype.correctAns = function(){
            console.log(this.question);
           for (var i = 0; i < this.aneswer.lenght; i++) {
-              console.log(i +  ':' + this.aneswer[i]);
+              console.log(i +  ': ' + this.aneswer[i]);
               
           }
     };
@@ -22,10 +22,10 @@ quizQuestions.prototype.checkAnswer = function () {
   }
 };
 
-   var quizOne = new quizQuestions('whta is your name', ['yogi', 'mukesh', 'dev'], 1);
-   var quizSecond = new quizQuestions('whta is your fav programming language', ['java', 'php', 'javascript'], 2);
-   var quizThree = new quizQuestions('whta is your  pet name', ['dog', 'rabbit', 'mouse'], 2);
-var quizFour = new quizQuestions('whta is your  puppy name', ['max', 'coco', 'luci'], 1);
+   var quizOne = new quizQuestions('what is your name', ['yogi', 'japesh', 'dev'], 1);
+   var quizSecond = new quizQuestions('what is your fav programming language', ['java', 'php', 'c++'], 2);
+   var quizThree = new quizQuestions('what is your  pet name', ['dog', 'rabbit', 'mouse'], 2);
+var quizFour = new quizQuestions('what is your  puppy name', ['blacky', 'rocki', 'luci'], 1);
 
 
        var quizAns = [quizOne, quizSecond, quizThree, quizFour];
@@ -34,5 +34,5 @@ var ans = Math.floor(Math.random() * quizAns.length);
       quizAns[ans].correctAns();
     
     
-var correct = parseInt(prompt('this is a nmain answer'));
+var correct = parseInt(prompt('this is the main answer'));
 quizAns[ans].checkAnswer();
